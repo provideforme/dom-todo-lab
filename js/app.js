@@ -17,3 +17,9 @@ document.getElementById("todo-list").innerHTML = "";
 document.getElementById("comment").value = "";
 })
 
+document.getElementById("todo-list").addEventListener('click', handleClick)
+
+function handleClick(evt) {
+  const liToRemove = evt.target
+  liToRemove.remove();
+}
